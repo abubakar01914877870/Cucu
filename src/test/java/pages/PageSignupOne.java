@@ -7,11 +7,11 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.How;
 import org.openqa.selenium.support.PageFactory;
 
-public class MarketingSignUppageOne {
+public class PageSignupOne {
 
     //private BaseUtil base;
 
-    public MarketingSignUppageOne(WebDriver driver) {
+    public PageSignupOne(WebDriver driver) {
 
         PageFactory.initElements(driver, this);
     }
