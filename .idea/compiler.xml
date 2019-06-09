@@ -20,7 +20,7 @@
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="Cucu" target="1.5" />
+      <module name="Cucu" target="11" />
     </bytecodeTargetLevel>
   </component>
 </project>

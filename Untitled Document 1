@@ -1,7 +1,0 @@
-For git push 
-
-git commit -m "added process to create webdriver dinamically" 
-git add . 
-git push origin master
-
-For git pull

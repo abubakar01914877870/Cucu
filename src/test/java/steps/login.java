@@ -1,16 +1,16 @@
 package steps;
 
-import base.BaseUtil;
+import lib.base.BaseUtil;
 import cucumber.api.java.en.And;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
-import pages.LoginPage;
+import pages.PageLogin;
 
 public class login extends BaseUtil {
 
     private BaseUtil base;
-    private String username;
+
 
     public login(BaseUtil base) {
         this.base = base;
@@ -23,15 +23,15 @@ public class login extends BaseUtil {
 
     @And("I enter the username as {string} and password as {string}")
     public void iEnterTheUsernameAsAndPasswordAs(String username, String password) {
-        LoginPage loginPage=new LoginPage(base.driver);
-        loginPage.Login(username, password);
+        PageLogin pageLogin =new PageLogin(base.driver);
+        pageLogin.Login(username, password);
 
     }
 
     @When("I click on login button")
     public void iClickOnLoginButton() {
-        LoginPage loginPage=new LoginPage(base.driver);
-        loginPage.ClickOnLoginButton();
+        PageLogin pageLogin =new PageLogin(base.driver);
+        pageLogin.ClickOnLoginButton();
     }
 
     @Then("I will see the list page")
