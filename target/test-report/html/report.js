@@ -12,9 +12,6 @@ formatter.scenario({
 formatter.before({
   "status": "passed"
 });
-formatter.before({
-  "status": "passed"
-});
 formatter.step({
   "name": "I navigate to \u0027https://marketing.fndev.net/signup\u0027 page",
   "keyword": "Given "
@@ -26,26 +23,16 @@ formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "I  filled up individual provider sign up form one",
-  "keyword": "Given "
-});
-formatter.match({
-  "location": "StepsSignUp.iFilledUpIndividualProviderSignUpFormOne()"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
   "name": "I filled up sign up form One",
   "rows": [
     {
       "cells": [
-        "Abu Bakar"
+        "provider"
       ]
     },
     {
       "cells": [
-        "Siddique"
+        "Individual"
       ]
     },
     {
@@ -111,6 +98,89 @@ formatter.result({
 });
 formatter.step({
   "name": "I expect page with text \"Check your inbox for a verification email\"",
+  "keyword": "Then "
+});
+formatter.match({
+  "location": "StepsSignUp.iExpectPageWithText(String)"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.after({
+  "status": "passed"
+});
+formatter.scenario({
+  "name": "Buyer Sign up",
+  "description": "",
+  "keyword": "Scenario"
+});
+formatter.before({
+  "status": "passed"
+});
+formatter.step({
+  "name": "I navigate to \u0027https://marketing.fndev.net/signup\u0027 page",
+  "keyword": "Given "
+});
+formatter.match({
+  "location": "login.iNavigateToLoginPage(String)"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "I filled up sign up form One",
+  "rows": [
+    {
+      "cells": [
+        "Buyer"
+      ]
+    },
+    {
+      "cells": [
+        "Company"
+      ]
+    },
+    {
+      "cells": [
+        "18005203698"
+      ]
+    },
+    {
+      "cells": [
+        "email"
+      ]
+    },
+    {
+      "cells": [
+        "1234qa"
+      ]
+    },
+    {
+      "cells": [
+        "I need workers"
+      ]
+    }
+  ],
+  "keyword": "When "
+});
+formatter.match({
+  "location": "StepsSignUp.iFilledUpSignUpFormOne(String\u003e)"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "I filled up sign up form Two buyer",
+  "keyword": "When "
+});
+formatter.match({
+  "location": "StepsSignUp.iFilledUpSignUpFormTwoBuyer()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "I expect page with text \"One job or many, near or far, find expert contractors wherever your work takes you.\"",
   "keyword": "Then "
 });
 formatter.match({

@@ -19,15 +19,12 @@ public class StepsSignUp extends BaseUtil {
         this.base = base;
     }
 
-    @Given("I  filled up individual provider sign up form one")
-    public void iFilledUpIndividualProviderSignUpFormOne() {
-    }
-
     @When("I filled up sign up form One")
     public void iFilledUpSignUpFormOne(List<String> t) {
 
         try{
             Provider provider= new Provider(
+                    base,
                     t.get(0),
                     t.get(1),
                     t.get(2),
@@ -49,6 +46,7 @@ public class StepsSignUp extends BaseUtil {
     public void iFilledUpSignUpFormTwo(List<String> t) {
         try{
             Provider provider= new Provider(
+                    base,
                     t.get(0),
                     t.get(1),
                     t.get(2),
@@ -64,5 +62,11 @@ public class StepsSignUp extends BaseUtil {
     @Then("I expect page with text {string}")
     public void iExpectPageWithText(String text) {
         Assert.assertTrue(new CheckText(base).getCheckingText(text));
+    }
+
+    @When("I filled up sign up form Two buyer")
+    public void iFilledUpSignUpFormTwoBuyer() {
+        PageSignupFormTwo Two_buyer= new PageSignupFormTwo(base);
+        Two_buyer.setSignUpPageTwoInformationBuyer();
     }
 }

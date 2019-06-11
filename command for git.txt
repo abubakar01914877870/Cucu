@@ -1,6 +1,6 @@
 For git push 
 
-git commit -m "added process to create webdriver dinamically" 
+git commit -m "Add buyer sign up scenario" 
 git add . 
 git push origin master
 

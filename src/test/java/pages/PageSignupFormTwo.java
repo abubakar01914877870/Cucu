@@ -6,6 +6,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.How;
 import org.openqa.selenium.support.PageFactory;
+import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
 
 public class PageSignupFormTwo extends BaseUtil {
@@ -34,6 +35,17 @@ public class PageSignupFormTwo extends BaseUtil {
     @FindBy(how = How.ID, using = "signUp")
     public WebElement sign_up_button;
 
+    // Does your company already have an account with Field Nation? No button
+    @FindBy(how = How.XPATH, using = "//label[@for = 'no-account']")
+    public WebElement no_account_No_button;
+
+    //Buyer Company name input field it should be a unique value
+    @FindBy(how = How.ID, using = "company")
+    public WebElement company_name;
+
+    @FindBy(how = How.XPATH, using = "//select[@id = 'number_of_employees']")
+    public WebElement number_of_employees;
+
     public void setSignUpPageTwoInformation(Provider provider)
     {
         Select dropdown=new Select(number_of_service_providers);
@@ -48,6 +60,26 @@ public class PageSignupFormTwo extends BaseUtil {
         dropdown_provider_country.selectByVisibleText(provider.Country);
 
         sign_up_button.click();
+    }
+
+    public void setSignUpPageTwoInformationBuyer()
+    {
+        try {
+            base.wait.until(ExpectedConditions.visibilityOf(no_account_No_button));
+            no_account_No_button.click();
+           // System.out.println(no_account_No_button.getText());
+
+            company_name.sendKeys("buyer company" + base.timeStamp);
+
+            Select dropdown_provider_country = new Select(number_of_employees);
+            dropdown_provider_country.selectByVisibleText("51-100");
+            sign_up_button.click();
+
+        }catch (Exception e)
+        {
+            System.out.println(e.getMessage());
+        }
+
     }
 
 }

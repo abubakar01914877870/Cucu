@@ -4,6 +4,8 @@ import lib.base.BaseUtil;
 
 public class Provider extends BaseUtil{
 
+    private BaseUtil base;
+
     public String first_name;
     public String last_name;
     public String phone;
@@ -15,17 +17,21 @@ public class Provider extends BaseUtil{
     public String Zip_Code;
     public String Country;
 
-    public Provider() {
+    public Provider(BaseUtil base) {
+        this.base =base;
     }
 
     //For sign up form one
-    public Provider(String first_name,
+    public Provider(BaseUtil base,
+                    String first_name,
                     String last_name,
                     String phone,
                     String email,
                     String password,
                     String which_best_describes_your_business_needs)
     {
+        this.base =base;
+
         this.first_name = first_name;
         this.last_name = last_name;
         this.phone = phone;
@@ -35,16 +41,20 @@ public class Provider extends BaseUtil{
 
         //Set provider email address
         if(email.equals("email")){
-            this.email="provider" + getTimeStamp() +"@yopmail.com";
+            this.email=first_name + last_name + base.timeStamp +"@yopmail.com";
         }
     }
 
     //For sign up form two
     public Provider(
+            BaseUtil base,
             String number_of_service_providers,
             String primary_type_of_work,
             String zip_Code,
             String country) {
+
+        this.base =base;
+
         Number_of_service_providers = number_of_service_providers;
         Primary_type_of_work = primary_type_of_work;
         Zip_Code = zip_Code;
@@ -52,7 +62,8 @@ public class Provider extends BaseUtil{
     }
 
     //Foe from Sign Up form both
-    public Provider(String first_name,
+    public Provider(BaseUtil base,
+                    String first_name,
                     String last_name,
                     String phone,
                     String email,
@@ -63,6 +74,8 @@ public class Provider extends BaseUtil{
                     String Zip_Code,
                     String Country )
     {
+        this.base =base;
+
         this.first_name = first_name;
         this.last_name = last_name;
         this.phone = phone;
@@ -76,7 +89,7 @@ public class Provider extends BaseUtil{
 
         //Set provider email address
         if(email.equals("email")){
-            this.email="provider" + getTimeStamp() +"@yopmail.com";
+            this.email=first_name + last_name + base.timeStamp +"@yopmail.com";
         }
     }
 
