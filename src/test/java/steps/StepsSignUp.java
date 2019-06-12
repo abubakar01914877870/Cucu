@@ -6,6 +6,8 @@ import cucumber.api.java.en.When;
 import lib.assertionElement.CheckText;
 import lib.base.BaseUtil;
 import lib.helperObject.Provider;
+import lib.helperObject.ServiceCompany;
+import org.picocontainer.annotations.Cache;
 import org.testng.Assert;
 import pages.PageSignupFormOne;
 import pages.PageSignupFormTwo;
@@ -68,5 +70,25 @@ public class StepsSignUp extends BaseUtil {
     public void iFilledUpSignUpFormTwoBuyer() {
         PageSignupFormTwo Two_buyer= new PageSignupFormTwo(base);
         Two_buyer.setSignUpPageTwoInformationBuyer();
+    }
+
+    @When("I filled up sign up form Two for service company")
+    public void iFilledUpSignUpFormTwoForServiceCompany(List<String> t) {
+
+        try {
+
+            ServiceCompany serviceCompany = new ServiceCompany(
+                    base,
+                    t.get(0),
+                    t.get(1),
+                    t.get(2),
+                    t.get(3));
+
+
+
+        } catch (Exception e){
+            System.out.println(e.getMessage());
+        }
+
     }
 }

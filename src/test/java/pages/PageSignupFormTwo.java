@@ -2,6 +2,7 @@ package pages;
 
 import lib.base.BaseUtil;
 import lib.helperObject.Provider;
+import lib.helperObject.ServiceCompany;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.How;
@@ -46,6 +47,26 @@ public class PageSignupFormTwo extends BaseUtil {
     @FindBy(how = How.XPATH, using = "//select[@id = 'number_of_employees']")
     public WebElement number_of_employees;
 
+    //Service Company name
+    @FindBy(how = How.ID, using = "company_name")
+    public WebElement service_company_name;
+
+    //Service Company address1
+    @FindBy(how = How.ID, using = "address")
+    public WebElement service_address1;
+
+    //Service Company city
+    @FindBy(how = How.ID, using = "city")
+    public WebElement service_city;
+
+    //Service Company state
+    @FindBy(how = How.ID, using = "state")
+    public WebElement service_state;
+
+    //Service Company sip code
+    @FindBy(how = How.ID, using = "zip_code")
+    public WebElement service_zip_code;
+
     public void setSignUpPageTwoInformation(Provider provider)
     {
         Select dropdown=new Select(number_of_service_providers);
@@ -80,6 +101,18 @@ public class PageSignupFormTwo extends BaseUtil {
             System.out.println(e.getMessage());
         }
 
+    }
+
+    public void setSignUpPageTwoInformationServiceCompany(ServiceCompany servicecompany)
+    {
+        try {
+            service_company_name.sendKeys(servicecompany.serviceCompanyName);
+
+
+
+        } catch (Exception e){
+            System.out.println(e.getMessage());
+        }
     }
 
 }

@@ -110,6 +110,111 @@ formatter.after({
   "status": "passed"
 });
 formatter.scenario({
+  "name": "Individual Canadian provider sign up",
+  "description": "",
+  "keyword": "Scenario"
+});
+formatter.before({
+  "status": "passed"
+});
+formatter.step({
+  "name": "I navigate to \u0027https://marketing.fndev.net/signup\u0027 page",
+  "keyword": "Given "
+});
+formatter.match({
+  "location": "login.iNavigateToLoginPage(String)"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "I filled up sign up form One",
+  "rows": [
+    {
+      "cells": [
+        "provider"
+      ]
+    },
+    {
+      "cells": [
+        "Individualcanada"
+      ]
+    },
+    {
+      "cells": [
+        "18005035263"
+      ]
+    },
+    {
+      "cells": [
+        "email"
+      ]
+    },
+    {
+      "cells": [
+        "1234qa"
+      ]
+    },
+    {
+      "cells": [
+        "I am looking for work"
+      ]
+    }
+  ],
+  "keyword": "When "
+});
+formatter.match({
+  "location": "StepsSignUp.iFilledUpSignUpFormOne(String\u003e)"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "I filled up sign up form Two",
+  "rows": [
+    {
+      "cells": [
+        "Just me"
+      ]
+    },
+    {
+      "cells": [
+        "General IT"
+      ]
+    },
+    {
+      "cells": [
+        "K1N 6N5"
+      ]
+    },
+    {
+      "cells": [
+        "Canada"
+      ]
+    }
+  ],
+  "keyword": "When "
+});
+formatter.match({
+  "location": "StepsSignUp.iFilledUpSignUpFormTwo(String\u003e)"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "I expect page with text \"Check your inbox for a verification email\"",
+  "keyword": "Then "
+});
+formatter.match({
+  "location": "StepsSignUp.iExpectPageWithText(String)"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.after({
+  "status": "passed"
+});
+formatter.scenario({
   "name": "Buyer Sign up",
   "description": "",
   "keyword": "Scenario"

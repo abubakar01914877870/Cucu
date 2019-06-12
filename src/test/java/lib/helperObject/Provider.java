@@ -41,7 +41,7 @@ public class Provider extends BaseUtil{
 
         //Set provider email address
         if(email.equals("email")){
-            this.email=first_name + last_name + base.timeStamp +"@yopmail.com";
+            this.email=first_name + base.timeStamp +"@yopmail.com";
         }
     }
 
@@ -89,7 +89,7 @@ public class Provider extends BaseUtil{
 
         //Set provider email address
         if(email.equals("email")){
-            this.email=first_name + last_name + base.timeStamp +"@yopmail.com";
+            this.email=first_name + base.timeStamp +"@yopmail.com";
         }
     }
 
