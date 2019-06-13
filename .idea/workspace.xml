@@ -2,13 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e772043b-6dee-4067-96f6-5cd873a11f03" name="Default Changelist" comment="Complete provider sign up">
-      <change afterPath="$PROJECT_DIR$/src/test/java/lib/helperObject/ServiceCompany.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/features/signup.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/features/signup.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/lib/helperObject/Provider.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/lib/helperObject/Provider.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/lib/helperObject/ServiceCompany.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/lib/helperObject/ServiceCompany.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/pages/PageSignupFormTwo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pages/PageSignupFormTwo.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/steps/StepsSignUp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/steps/StepsSignUp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/lib/helperObject/Provider.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/lib/helperObject/Provider.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/pages/PageSignupFormTwo.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/pages/PageSignupFormTwo.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/steps/StepsSignUp.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/steps/StepsSignUp.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/test-classes/steps/hooks/hook.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/steps/hooks/hook.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/test-report/html/report.js" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-report/html/report.js" afterDir="false" />
     </list>
@@ -25,11 +27,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/features/signup.feature">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="347">
-              <caret line="58" column="43" selection-start-line="58" selection-start-column="43" selection-end-line="58" selection-end-column="43" />
+            <state relative-caret-position="750">
+              <caret line="53" column="16" lean-forward="true" selection-start-line="53" selection-start-column="16" selection-end-line="53" selection-end-column="16" />
             </state>
           </provider>
         </entry>
@@ -37,20 +39,26 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/steps/StepsSignUp.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="336">
-              <caret line="86" selection-start-line="86" selection-end-line="86" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="291">
+              <caret line="84" column="29" lean-forward="true" selection-start-line="84" selection-start-column="29" selection-end-line="84" selection-end-column="29" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/test/java/pages/PageSignupFormTwo.java">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/lib/helperObject/ServiceCompany.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="711">
-              <caret line="109" selection-start-line="109" selection-end-line="109" />
+            <state relative-caret-position="221">
+              <caret line="25" column="51" selection-start-line="25" selection-start-column="51" selection-end-line="25" selection-end-column="51" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/steps/hooks/hook.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="178">
+              <caret line="66" column="7" selection-start-line="66" selection-start-column="7" selection-end-line="66" selection-end-column="7" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -59,10 +67,13 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/lib/helperObject/ServiceCompany.java">
+        <entry file="file://$PROJECT_DIR$/src/test/java/pages/PageSignupFormTwo.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="270">
-              <caret line="18" column="39" lean-forward="true" selection-start-line="18" selection-start-column="39" selection-end-line="18" selection-end-column="39" />
+            <state relative-caret-position="240">
+              <caret line="114" column="86" selection-start-line="114" selection-start-column="86" selection-end-line="114" selection-end-column="86" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -108,12 +119,12 @@
         <option value="$PROJECT_DIR$/src/test/java/lib/helperObject/Mixed.java" />
         <option value="$PROJECT_DIR$/src/test/java/lib/helperObject/buyerCompany.java" />
         <option value="$PROJECT_DIR$/src/test/java/lib/base/BaseUtil.java" />
-        <option value="$PROJECT_DIR$/src/test/java/steps/hooks/hook.java" />
         <option value="$PROJECT_DIR$/src/test/java/lib/helperObject/Provider.java" />
-        <option value="$PROJECT_DIR$/src/test/java/features/signup.feature" />
         <option value="$PROJECT_DIR$/src/test/java/lib/helperObject/ServiceCompany.java" />
         <option value="$PROJECT_DIR$/src/test/java/steps/StepsSignUp.java" />
         <option value="$PROJECT_DIR$/src/test/java/pages/PageSignupFormTwo.java" />
+        <option value="$PROJECT_DIR$/src/test/java/steps/hooks/hook.java" />
+        <option value="$PROJECT_DIR$/src/test/java/features/signup.feature" />
       </list>
     </option>
   </component>
@@ -268,8 +279,8 @@
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
       <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -425,15 +436,6 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="CucumberTestRunner - 2019.06.11 at 13h 15m 22s.xml">
-      <configuration name="CucumberTestRunner" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="CucumberTestRunner - 2019.06.11 at 13h 16m 37s.xml">
-      <configuration name="CucumberTestRunner" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="CucumberTestRunner - 2019.06.11 at 13h 27m 08s.xml">
-      <configuration name="CucumberTestRunner" configurationId="TestNG" />
-    </history-entry>
     <history-entry file="CucumberTestRunner - 2019.06.11 at 13h 31m 31s.xml">
       <configuration name="CucumberTestRunner" configurationId="TestNG" />
     </history-entry>
@@ -455,6 +457,15 @@
     <history-entry file="CucumberTestRunner - 2019.06.12 at 15h 33m 53s.xml">
       <configuration name="CucumberTestRunner" configurationId="TestNG" />
     </history-entry>
+    <history-entry file="CucumberTestRunner - 2019.06.13 at 11h 39m 50s.xml">
+      <configuration name="CucumberTestRunner" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="CucumberTestRunner - 2019.06.13 at 11h 47m 41s.xml">
+      <configuration name="CucumberTestRunner" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="CucumberTestRunner - 2019.06.13 at 11h 50m 43s.xml">
+      <configuration name="CucumberTestRunner" configurationId="TestNG" />
+    </history-entry>
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -466,10 +477,9 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="67" y="25" width="1299" height="743" extended-state="6" />
-    <editor active="true" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2793296" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.28366113" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -478,7 +488,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3289689" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.07491857" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.39934534" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39934534" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -664,16 +674,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/steps/hooks/hook.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="990">
-          <caret line="69" selection-start-line="69" selection-end-line="69" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/target/test-report/html/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="75">
@@ -688,37 +688,44 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/features/signup.feature">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="347">
-          <caret line="58" column="43" selection-start-line="58" selection-start-column="43" selection-end-line="58" selection-end-column="43" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/lib/helperObject/ServiceCompany.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="18" column="39" lean-forward="true" selection-start-line="18" selection-start-column="39" selection-end-line="18" selection-end-column="39" />
+        <state relative-caret-position="221">
+          <caret line="25" column="51" selection-start-line="25" selection-start-column="51" selection-end-line="25" selection-end-column="51" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/steps/StepsSignUp.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="336">
-          <caret line="86" selection-start-line="86" selection-end-line="86" />
+        <state relative-caret-position="291">
+          <caret line="84" column="29" lean-forward="true" selection-start-line="84" selection-start-column="29" selection-end-line="84" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/pages/PageSignupFormTwo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="114" column="86" selection-start-line="114" selection-start-column="86" selection-end-line="114" selection-end-column="86" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/pages/PageSignupFormTwo.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/steps/hooks/hook.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="711">
-          <caret line="109" selection-start-line="109" selection-end-line="109" />
+        <state relative-caret-position="178">
+          <caret line="66" column="7" selection-start-line="66" selection-start-column="7" selection-end-line="66" selection-end-column="7" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/features/signup.feature">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="750">
+          <caret line="53" column="16" lean-forward="true" selection-start-line="53" selection-start-column="16" selection-end-line="53" selection-end-column="16" />
         </state>
       </provider>
     </entry>

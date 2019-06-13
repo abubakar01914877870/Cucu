@@ -297,4 +297,114 @@ formatter.result({
 formatter.after({
   "status": "passed"
 });
+formatter.scenario({
+  "name": "Service Company  sign up",
+  "description": "",
+  "keyword": "Scenario"
+});
+formatter.before({
+  "status": "passed"
+});
+formatter.step({
+  "name": "I navigate to \u0027https://marketing.fndev.net/signup\u0027 page",
+  "keyword": "Given "
+});
+formatter.match({
+  "location": "login.iNavigateToLoginPage(String)"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "I filled up sign up form One",
+  "rows": [
+    {
+      "cells": [
+        "service"
+      ]
+    },
+    {
+      "cells": [
+        "company"
+      ]
+    },
+    {
+      "cells": [
+        "18005035264"
+      ]
+    },
+    {
+      "cells": [
+        "email"
+      ]
+    },
+    {
+      "cells": [
+        "1234qa"
+      ]
+    },
+    {
+      "cells": [
+        "I am looking for work"
+      ]
+    }
+  ],
+  "keyword": "When "
+});
+formatter.match({
+  "location": "StepsSignUp.iFilledUpSignUpFormOne(String\u003e)"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "I filled up sign up form Two for service company",
+  "rows": [
+    {
+      "cells": [
+        "Up to ten service providers"
+      ]
+    },
+    {
+      "cells": [
+        "733 Marquette Avenue S"
+      ]
+    },
+    {
+      "cells": [
+        "Minneapolis"
+      ]
+    },
+    {
+      "cells": [
+        "MN"
+      ]
+    },
+    {
+      "cells": [
+        "55113"
+      ]
+    }
+  ],
+  "keyword": "When "
+});
+formatter.match({
+  "location": "StepsSignUp.iFilledUpSignUpFormTwoForServiceCompany(String\u003e)"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "I expect page with text \"Check your inbox for a verification email\"",
+  "keyword": "Then "
+});
+formatter.match({
+  "location": "StepsSignUp.iExpectPageWithText(String)"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.after({
+  "status": "passed"
+});
 });

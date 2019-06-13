@@ -47,6 +47,10 @@ public class PageSignupFormTwo extends BaseUtil {
     @FindBy(how = How.XPATH, using = "//select[@id = 'number_of_employees']")
     public WebElement number_of_employees;
 
+    //Number of service providers dropdown
+    @FindBy(how = How.ID, using = "serviceProviders")
+    public WebElement service_number_of_provider;
+
     //Service Company name
     @FindBy(how = How.ID, using = "company_name")
     public WebElement service_company_name;
@@ -63,7 +67,7 @@ public class PageSignupFormTwo extends BaseUtil {
     @FindBy(how = How.ID, using = "state")
     public WebElement service_state;
 
-    //Service Company sip code
+    //Service Company zip code
     @FindBy(how = How.ID, using = "zip_code")
     public WebElement service_zip_code;
 
@@ -106,7 +110,17 @@ public class PageSignupFormTwo extends BaseUtil {
     public void setSignUpPageTwoInformationServiceCompany(ServiceCompany servicecompany)
     {
         try {
-            service_company_name.sendKeys(servicecompany.serviceCompanyName);
+
+            Select dropdown_type_of_work=new Select(service_number_of_provider);
+            dropdown_type_of_work.selectByVisibleText(servicecompany.numberOfproviders);
+
+            service_company_name.sendKeys(servicecompany.name);
+            service_address1.sendKeys(servicecompany.address1);
+            service_city.sendKeys(servicecompany.city);
+            service_state.sendKeys(servicecompany.state);
+            service_zip_code.sendKeys(servicecompany.zipCode);
+
+            sign_up_button.click();
 
 
 

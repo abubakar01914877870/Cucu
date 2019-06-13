@@ -6,14 +6,16 @@ public class ServiceCompany extends BaseUtil {
 
     private BaseUtil base;
 
-    public String serviceCompanyName;
-    public String serviceCompanyAddress1;
-    public String serviceCompanyCity;
-    public String serviceCompanyState;
-    public String serviceCompanyZipCode;
+    public String numberOfproviders;
+    public String name;
+    public String address1;
+    public String city;
+    public String state;
+    public String zipCode;
 
     public ServiceCompany(
             BaseUtil base,
+            String numberOfproviders,
             String serviceCompanyAddress1,
             String serviceCompanyCity,
             String serviceCompanyState,
@@ -21,10 +23,11 @@ public class ServiceCompany extends BaseUtil {
     {
         this.base = base;
 
-        this.serviceCompanyName = "SC" + this.base.timeStamp;
-        this.serviceCompanyAddress1 = serviceCompanyAddress1;
-        this.serviceCompanyCity = serviceCompanyCity;
-        this.serviceCompanyState = serviceCompanyState;
-        this.serviceCompanyZipCode = serviceCompanyZipCode;
+        this.numberOfproviders = numberOfproviders;
+        this.name = "SC" + this.base.timeStamp;
+        this.address1 = serviceCompanyAddress1;
+        this.city = serviceCompanyCity;
+        this.state = serviceCompanyState;
+        this.zipCode = serviceCompanyZipCode;
     }
 }

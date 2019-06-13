@@ -82,9 +82,11 @@ public class StepsSignUp extends BaseUtil {
                     t.get(0),
                     t.get(1),
                     t.get(2),
-                    t.get(3));
+                    t.get(3),
+                    t.get(4));
 
-
+            PageSignupFormTwo Two = new PageSignupFormTwo(base);
+            Two.setSignUpPageTwoInformationServiceCompany(serviceCompany);
 
         } catch (Exception e){
             System.out.println(e.getMessage());
