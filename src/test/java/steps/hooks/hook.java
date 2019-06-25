@@ -1,5 +1,6 @@
 package steps.hooks;
 
+import lib.WriteInCSV;
 import lib.base.BaseUtil;
 import cucumber.api.Scenario;
 import cucumber.api.java.After;
@@ -7,8 +8,11 @@ import cucumber.api.java.Before;
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
+import java.io.FileWriter;
+import java.io.IOException;
 import java.util.Date;
 
 public class hook  extends BaseUtil {
@@ -30,10 +34,13 @@ public class hook  extends BaseUtil {
 
         System.setProperty("wdm.targetPath", "src/test/webDriver/");
         WebDriverManager.chromedriver().setup();
-        WebDriver driver=new ChromeDriver();
+        ChromeOptions options = new ChromeOptions();
+        options.addArguments("--headless");
+         WebDriver driver=new ChromeDriver(options);
+       // WebDriver driver=new ChromeDriver();
         driver.manage().window().maximize();
 
-        base.driver =driver;
+        base.driver = driver;
 
       //  lib.driver= new FirefoxDriver();
         try {
@@ -62,6 +69,16 @@ public class hook  extends BaseUtil {
         }else
         {
             System.out.println(scenario.getName() + " is Passed");
+            System.out.println("Email: "  + base.pUser.email);
+            System.out.println("Password: "  + base.pUser.password);
+
+
+            try {
+               new WriteInCSV().ResultWriteInCSV(base.pUser);
+            } catch (Exception e) {
+                e.printStackTrace();
+            }
+
         }
 
         base.driver.close();

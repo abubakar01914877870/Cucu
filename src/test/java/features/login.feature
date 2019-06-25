@@ -1,4 +1,4 @@
-Feature:  Log in
+#Feature:  Log in
 
 #  Scenario: Sign-up Individual provider
 #    Given I navigate to "https://ui-int.fndev.net/login" page

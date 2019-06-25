@@ -23,7 +23,7 @@ public class CheckText extends BaseUtil {
                             By.xpath("//*[contains(text(),'" + txt + "')]")));
 
             if(page_txt.isDisplayed()){
-               // System.out.println("text present");
+                System.out.println(page_txt.getText());
                 return true;
             } else {
                // System.out.println("text not present");

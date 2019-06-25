@@ -24,6 +24,7 @@ public class PageLogin {
 
     public void Login(String userName, String password)
     {
+
         txtUserName.sendKeys(userName);
         txtPassword.sendKeys(password);
     }
