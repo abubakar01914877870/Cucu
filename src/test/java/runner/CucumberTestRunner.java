@@ -6,7 +6,7 @@ import cucumber.api.testng.AbstractTestNGCucumberTests;
 // Runner using TestNG
 @CucumberOptions(
         features = {"src/test/java/features"},
-        tags = {"@login"},
+        tags = {"@facebook"},
         glue = "steps",
         plugin = {"html:target/test-report/html/",})
 

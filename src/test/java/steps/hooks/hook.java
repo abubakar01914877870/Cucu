@@ -7,6 +7,7 @@ import cucumber.api.java.Before;
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 import java.util.Date;
@@ -30,10 +31,14 @@ public class hook  extends BaseUtil {
 
         System.setProperty("wdm.targetPath", "src/test/webDriver/");
         WebDriverManager.chromedriver().setup();
-        WebDriver driver=new ChromeDriver();
+
+        ChromeOptions options = new ChromeOptions();
+        options.addArguments("--disable-notifications");
+
+        WebDriver driver=new ChromeDriver(options);
         driver.manage().window().maximize();
 
-        base.driver =driver;
+        base.driver = driver;
 
       //  lib.driver= new FirefoxDriver();
         try {
