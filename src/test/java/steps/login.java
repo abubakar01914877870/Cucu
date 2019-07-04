@@ -1,10 +1,12 @@
 package steps;
 
+import lib.assertionElement.CheckText;
 import lib.base.BaseUtil;
 import cucumber.api.java.en.And;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
+import org.testng.Assert;
 import pages.PageLogin;
 
 public class login extends BaseUtil {
@@ -34,11 +36,8 @@ public class login extends BaseUtil {
         pageLogin.ClickOnLoginButton();
     }
 
-    @Then("I will see the list page")
-    public void iWillSeeTheListPage() {
+    @Then("I will see the {string} page")
+    public void iWillSeeThePage(String pageName) {
+        Assert.assertTrue(new CheckText(base).getCheckingText(pageName));
     }
-
-
-
-
 }
